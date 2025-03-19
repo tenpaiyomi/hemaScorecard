@@ -6,9 +6,9 @@
 
 	define("PRIMARY_DATABASE","ScorecardV5");
 	define("DATABASE_HOST","db");
-	define("DATABASE_USER","user");
-	define("DATABASE_PASSWORD","passw0rd");
-	define("DEPLOYMENT", DEPLOYMENT_UNKNOWN);
+	define("DATABASE_USER", $_ENV['MYSQL_USER']);
+	define("DATABASE_PASSWORD", $_ENV['MYSQL_PASSWORD']);
+	define("DEPLOYMENT", $_ENV['DEPLOYMENT'] ?? DEPLOYMENT_UNKNOWN);
 
 	define("HEMA_RATINGS_TOKEN","");
 	define("HEMA_RATINGS_BY_NAME","");

@@ -1,2 +1,7 @@
 data/
 !/**/.gitkeep
+
+# Don't commit any .env files except for the template
+.env
+.env.*
+!.env.template
